@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var User = require('./user')
+var User = require('./user');
 
 var songSchema = new mongoose.Schema({
   artist: { type: mongoose.Schema.ObjectId, ref: 'User' },
@@ -7,9 +7,7 @@ var songSchema = new mongoose.Schema({
   image: String,
   genre: String,
   bpm: String,
-  url: String,
-  created_at: Timestamp,
-  updated_at: Timestamp
+  url: String
 });
 
 module.exports = mongoose.model('Song', songSchema);

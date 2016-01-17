@@ -1,4 +1,4 @@
 module.exports = {
   'secret': 'jsonwebtokensforbeatsity',
-  'database': 'mongodb://localhost:27017/beatsity2.0'
+  'database': 'mongodb://localhost:27017/beatsityv2'
 };

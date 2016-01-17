@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var bcrypt   = require('bcrypt-nodejs');
-var Song = require('./song')
+var Song     = require('./song');
 
 var userSchema = new mongoose.Schema({
   local: {
@@ -16,8 +16,6 @@ var userSchema = new mongoose.Schema({
       country: String,
       website: String,
     },
-    created_at: Timestamp,
-    updated_at: Timestamp,
     songs: [{ type: mongoose.Schema.ObjectId, ref: 'Song' }],
   }
 });
